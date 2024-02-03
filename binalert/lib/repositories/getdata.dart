@@ -7,7 +7,7 @@ class CryptoService {
 
   Future<Crypto?> getCryptoData(String symbol) async {
     final String url =
-        'https://pro-api.coinmarketcap.com//v1/cryptocurrency/map?symbol=$symbol';
+        'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=$symbol';
 
     final Map<String, String> headers = {
       'Accept': 'application/json',
@@ -17,17 +17,25 @@ class CryptoService {
     final response = await http.get(Uri.parse(url), headers: headers);
 
     if (response.statusCode == 200) {
-      final Map<String, dynamic> data = json.decode(response.body);
-      if (data['status']['error_code'] == 0) {
-        return Crypto.fromJson(data['data'][0]);
-      } else {
-        print('API error: ${data['status']['error_message']}');
-        return null;
-      }
+  final Map<String, dynamic> data = json.decode(response.body);
+  if (data['status']['error_code'] == 0) {
+    final Map<String, dynamic>? cryptoData = data['data'][symbol]; 
+    if (cryptoData != null) {
+      //print(Crypto.fromJson(cryptoData));
+      return Crypto.fromJson(cryptoData);
     } else {
-      print('HTTP error ${response.statusCode}: ${response.body}');
+      print('Crypto data for "BTC" not found');
       return null;
     }
+  } else {
+    print('API error: ${data['status']['error_message']}');
+    return null;
+  }
+} else {
+  print('HTTP error ${response.statusCode}: ${response.body}');
+  return null;
+}
+
   }
 }
 

@@ -4,8 +4,39 @@ import 'package:binalert/repositories/getdata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Dashboard extends StatelessWidget {
+class Dashboard extends StatefulWidget {
   const Dashboard({Key? key});
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+
+    final CryptoService cryptoService = CryptoService();
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchAndPrintCryptoData();
+  }
+
+  Future<void> _fetchAndPrintCryptoData() async {
+    try {
+      final cryptoData = await cryptoService.getCryptoData("BTC");
+
+      if (cryptoData != null) {
+        print(cryptoData.symbol);
+        //print("Crypto Data: ${cryptoData.toJson()}");
+      } else {
+        print("Failed to fetch crypto data: Data is null");
+      }
+    } catch (error) {
+      print("Error fetching crypto data: $error");
+    }
+
+    
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +52,7 @@ class Dashboard extends StatelessWidget {
     print(avgScore);
     print("height : ${MediaQuery.of(context).size.width * 0.6}");
 
-    // Fetch cryptocurrency data and print it
-    // final cryptoService = CryptoService();
 
-    // cryptoService.getCryptoData("BTC").then((cryptoData) {
-    //   if (cryptoData != null) {
-    //     print("Crypto Data: ${cryptoData.toJson()}");
-    //   } else {
-    //     print("Failed to fetch crypto data: Data is null");
-    //   }
-    // }).catchError((error) {
-    //   print("Error fetching crypto data: $error");
-    // });
 
     return Scaffold(
       backgroundColor: Colors.transparent,
