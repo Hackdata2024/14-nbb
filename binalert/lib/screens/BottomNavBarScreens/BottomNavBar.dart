@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:binalert/screens/BottomNavBarScreens/history.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -24,8 +25,8 @@ class _NavBarScreensState extends State<NavBarScreens> {
     super.initState();
   }
 
-  int index = 2;
-  List<Widget> screensList = [Dashboard(),Dashboard(),Dashboard()];
+  int index = 1;
+  List<Widget> screensList = [HistoryPage(),Dashboard(),ProfilePage()];
 
   @override
   Widget build(BuildContext context) {
@@ -75,12 +76,8 @@ class MyTabItem {
 }
 
 List<MyTabItem> NavBarItems = [
-  MyTabItem('Events Screen', 'Events', Icons.calendar_month_outlined),
-  MyTabItem('Practice Screen', 'Practice', Icons.question_answer_outlined),
-  
-  MyTabItem('Dashboard Screen', 'Dashboard', Icons.speed_outlined),
-  MyTabItem('Resources Screen', 'Resources', Icons.menu_book_outlined),
-  
+  MyTabItem('History Screen', 'Practice', Icons.history),
+  MyTabItem('Home Screen', 'Dashboard', Icons.home),  
   MyTabItem('Profile Screen', 'Profile', Icons.person),
 ];
 
@@ -93,25 +90,3 @@ List<BottomNavigationBarItem> getBottomTabs(List<MyTabItem> items) {
   }).toList();
 }
 
-int _selectedIndex = 0;
-TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-  ];
-
-  // void _onItemTapped(int index) {
-  //   setState(() {
-  //     _selectedIndex = index;
-  //   });
-  // }

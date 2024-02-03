@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 MaterialPageRoute(builder: (context) => RegisterScreen()));
           } else if (state is AuthStateLoggedIn) {
             Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) => NavBarScreens()));
+                MaterialPageRoute(builder: (context) => const NavBarScreens()));
           }
         },
         builder: (context, state) {

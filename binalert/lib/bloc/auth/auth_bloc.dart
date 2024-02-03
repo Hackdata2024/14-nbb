@@ -1,3 +1,5 @@
+import 'package:binalert/models/crypto.dart';
+import 'package:binalert/repositories/getdata.dart';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:binalert/bloc/auth/auth_event.dart';
@@ -6,7 +8,10 @@ import 'package:binalert/bloc/auth/auth_state.dart';
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   AuthBloc() : super(AuthStateInitial()) {
     on<LogIn>((event, emit) async {
+      
+
       emit(AuthStateIsLoading());
+      print("tag");
       final email = event.email;
       final password = event.password;
       int success =
