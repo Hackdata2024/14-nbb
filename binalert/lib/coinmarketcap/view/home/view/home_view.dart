@@ -1,3 +1,4 @@
+import 'package:binalert/coinmarketcap/view/_product/tabbar/trading_tab_views.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:binalert/coinmarketcap/core/enum/base_status.dart';
@@ -49,7 +50,7 @@ class CryptoList extends StatelessWidget {
     return ListView.builder(
       itemCount: data.response.length,
       itemBuilder: (BuildContext context, int index) {
-        return x(crypto: data.response[index] as Crypto);
+        return TradingTabViews(crypto: data.response[index] as Crypto);
       },
     );
   }

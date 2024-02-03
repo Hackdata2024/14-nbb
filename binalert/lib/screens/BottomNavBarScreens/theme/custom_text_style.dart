@@ -9,7 +9,7 @@ class CustomTextStyles {
   // Manrope text style
   static get manropeGray50 => TextStyle(
         color: appTheme.gray50,
-        fontSize: 95,
+        fontSize: 50,
         fontWeight: FontWeight.w700,
       ).manrope;
   // Title text style

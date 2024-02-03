@@ -24,7 +24,7 @@ class CryptoService {
       //print(Crypto.fromJson(cryptoData));
       return Crypto.fromJson(cryptoData);
     } else {
-      print('Crypto data for "BTC" not found');
+      print('Crypto data for ${symbol} not found');
       return null;
     }
   } else {
