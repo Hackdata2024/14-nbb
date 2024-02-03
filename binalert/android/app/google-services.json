@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222938339614",
+    "project_id": "binalert",
+    "storage_bucket": "binalert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222938339614:android:e2ad15b7ab0d915b23910f",
+        "android_client_info": {
+          "package_name": "com.example.binalert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuEnASr7oyz782RFl2C1KPFPwgsmRBQS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
