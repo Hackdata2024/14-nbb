@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:binalert/models/crypto.dart';
+import 'package:binalert/coinmarketcap/view/home/model/crypto.dart';
 import 'package:http/http.dart' as http;
 
 class CryptoService {

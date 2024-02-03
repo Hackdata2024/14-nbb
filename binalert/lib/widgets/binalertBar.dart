@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-PreferredSize hackethixAppBar(String title, BuildContext context) {
+PreferredSize binalertAppBar(String title, BuildContext context) {
   Future<void> InfoDialog(BuildContext context) {
     return showDialog<void>(
       context: context,
@@ -33,7 +33,7 @@ PreferredSize hackethixAppBar(String title, BuildContext context) {
     preferredSize: Size.fromHeight(50.0),
     child: AppBar(
       iconTheme:
-          IconThemeData(color: Color.fromARGB(255, 206, 255, 68), size: 30),
+          IconThemeData(color: Color.fromARGB(255, 250, 250, 250), size: 28),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
         bottomLeft:
@@ -41,7 +41,7 @@ PreferredSize hackethixAppBar(String title, BuildContext context) {
         bottomRight: Radius.circular(0),
       )),
       centerTitle: true,
-      backgroundColor: Color.fromARGB(255, 74, 74, 74),
+      backgroundColor: Colors.transparent,
       elevation: 0,
       // leading: GestureDetector(
       //   child: Icon(Icons.menu,color: Color.fromARGB(255, 206, 255, 68), size: 30),
@@ -58,7 +58,7 @@ PreferredSize hackethixAppBar(String title, BuildContext context) {
       actions: <Widget>[
         GestureDetector(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 15, 0),
               child: Icon(
                 Icons.info,
               ),

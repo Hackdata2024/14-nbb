@@ -9,7 +9,7 @@ Drawer AppBarDrawer(
   // through the options in the drawer if there isn't enough vertical
   // space to fit everything.
   return Drawer(
-    backgroundColor: Color.fromARGB(255, 206, 255, 68),
+    backgroundColor: Color.fromARGB(05, 05, 05, 05),
     child: ListView(
       // Important: Remove any padding from the ListView.
       padding: EdgeInsets.zero,
@@ -23,7 +23,7 @@ Drawer AppBarDrawer(
             child: Column(
               children: [
                 Image.asset(
-                  'assets/black_logo.jpeg', // Replace with the path to your image asset
+                  'assets/paimon.jpeg', // Replace with the path to your image asset
                   height: 150,
                   width: 150,
                   fit: BoxFit.fill, // Adjust the height as needed

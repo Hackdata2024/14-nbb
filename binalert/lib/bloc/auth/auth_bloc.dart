@@ -1,4 +1,3 @@
-import 'package:binalert/models/crypto.dart';
 import 'package:binalert/repositories/getdata.dart';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';

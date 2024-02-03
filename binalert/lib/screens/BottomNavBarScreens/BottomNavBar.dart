@@ -34,7 +34,7 @@ class _NavBarScreensState extends State<NavBarScreens> {
       child: Scaffold(
         drawer: AppBarDrawer(context),
         extendBodyBehindAppBar: true,
-        appBar: hackethixAppBar(NavBarItems[index].title, context),
+        appBar: binalertAppBar(NavBarItems[index].title, context),
         backgroundColor: Colors.transparent,
         body: screensList[index],
         bottomNavigationBar: BottomNavigationBar(
@@ -45,11 +45,10 @@ class _NavBarScreensState extends State<NavBarScreens> {
           type: BottomNavigationBarType.shifting,
           selectedIconTheme: IconThemeData(
               color: Color.fromARGB(
-                  255, 205, 255, 68)), // Set the color for selected icons
+                  255, 250, 250, 250)), // Set the color for selected icons
           unselectedIconTheme:
               IconThemeData(color: Color.fromARGB(255, 84,83,84)),
-          selectedItemColor: Color.fromARGB(255, 205, 255,
-              68), // Set the color for selected items (icons and text)
+          selectedItemColor: Color.fromARGB(255, 250, 250, 250), // Set the color for selected items (icons and text)
           unselectedItemColor: Color.fromARGB(255, 84,83,84), // Set the color for unselected items (icons and text)
           iconSize: 30, // Set the size of the icons
           items: getBottomTabs(NavBarItems),
