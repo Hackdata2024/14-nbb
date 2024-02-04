@@ -1,12 +1,8 @@
 import 'dart:ui';
 import 'package:binalert/screens/BottomNavBarScreens/history.dart';
+import 'package:binalert/screens/profile.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:binalert/repositories/firebase_repo.dart';
-import 'package:binalert/repositories/firebase_storage_repo.dart';
 import 'package:binalert/screens/BottomNavBarScreens/dashboard.dart';
-import 'package:binalert/screens/BottomNavBarScreens/profile_page.dart';
 import 'package:binalert/widgets/backgroundContainer.dart';
 import 'package:binalert/widgets/binalertBar.dart';
 import 'package:binalert/widgets/app_bar_drawer.dart';

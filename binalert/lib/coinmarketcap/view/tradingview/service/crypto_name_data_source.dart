@@ -1,6 +1,6 @@
 class CryptoNameDataSource {
   static String binanceSourceEuro(String cryptoName) {
-    return 'BINANCE:${cryptoName}USD';
+    return 'BINANCE:${cryptoName}USDT';
   }
 
   static String cryptoNameAndSource(String name) {
