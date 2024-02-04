@@ -7,15 +7,13 @@ Gouresh : Designer , Presentation , UI/UX
 Blockchain , Flutter , Node.js, Amazon AWS, Dart , Pandas , Python, Binance API, CoinMarketCap.
 
 ***Idea Description*** <br>
-Provide a comprehensive description of your project idea and its relevance to future-tech challenges.
+Designing a Cryptocurrency pump detection system which sends notification to user of an upcoming pump in Cryptocurrency by analyzing previous data and applying ML to make prediction. <br>
 
 ***How to Run the Project***  <br>
 FOR BACKEND : In backend folder run "node main.js"
 FOR APP : In main.dart ,dashboard.dart and history.dart change the ip address used to the backend public ip. Build the Flutter project and deploy.
 
 ***Explain the Core Code***  <br>
-
-Certainly! Since the project has already been implemented, let's describe the core code components more definitively:
 
 Node Backend:<br>
 
