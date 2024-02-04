@@ -45,3 +45,6 @@ Trading View Integration:<br>
 Integrates with TradingView for advanced charting and analysis of investments.
 Enables users to monitor their invested stocks and cryptocurrencies.
 Leverages TradingView tools for informed decision-making.<br>
+
+
+CHECK OUT IN DEPTH PRESENTATION HERE : https://www.youtube.com/watch?v=YcuQNKJ9EFE
