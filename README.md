@@ -1,16 +1,15 @@
-***Team* ** <br>
+***Team*** <br>
 Saaz and Somay : Machine Learning and Data Analysis
 Darsh : App Developer , Backend Developer
 Gouresh : Designer , Presentation , UI/UX
 
-***Tech Used* ** <br>
+***Tech Used*** <br>
 Blockchain , Flutter , Node.js, Amazon AWS, Dart , Pandas , Python, Binance API, CoinMarketCap.
 
 ***Idea Description*** <br>
 Provide a comprehensive description of your project idea and its relevance to future-tech challenges.
 
-**
-*How to Run the Project***  <br>
+***How to Run the Project***  <br>
 FOR BACKEND : In backend folder run "node main.js"
 FOR APP : In main.dart ,dashboard.dart and history.dart change the ip address used to the backend public ip. Build the Flutter project and deploy.
 
