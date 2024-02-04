@@ -7,7 +7,7 @@ Gouresh : Designer , Presentation , UI/UX
 Blockchain , Flutter , Node.js, Amazon AWS, Dart , Pandas , Python, Binance API, CoinMarketCap.
 
 ***Idea Description*** <br>
-Made a Realtime 500+ Cryptocurrency pump detection system which sends notification to user of an upcoming pump in Cryptocurrency by analyzing previous data and applying ML to make prediction. <br>
+Made a Realtime 500+ Cryptocurrency pump detection system which sends notification to user in our Mobile App of an upcoming pump in Cryptocurrency by analyzing previous data and applying ML to make prediction. <br>
 
 ***How to Run the Project***  <br>
 FOR BACKEND : In backend folder run "node main.js"
